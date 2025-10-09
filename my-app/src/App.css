@@ -17,7 +17,7 @@ body {
     text-align: center;
 }
 
-.frames {
+.page {
     display: flex;
     flex-direction: column;
     align-items: center;       
@@ -25,6 +25,32 @@ body {
     margin-top: 0px;          
     text-align: center;
 }
+
+#camera {
+    width: 800px;
+    height: 600px;
+    transform: scaleX(-1); /* Mirror the video feed */
+}
+
+#countDown {
+    position: absolute;
+    right: 30px;             
+    top: 50%;                 
+    transform: translateY(-50%);
+
+    font-family: 'Baloo 2', cursive;
+    font-size: 60px;
+
+    border-radius: 12px;
+    padding: 10px 20px;
+}
+
+.photoGallery {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+  
 
 h2 {
     margin-top: 0px;
